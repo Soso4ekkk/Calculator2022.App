@@ -11,10 +11,10 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private void PressBtn(object sender, EventArgs e)
 	{
-		calc.Press(Calculator.Clear);
-		lblScreen.Text = calc.Screen;
+        calc.Press(((Button)sender).Text);
+        screen.Text = calc.Screen;
 	}
 }
 
